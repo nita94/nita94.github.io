@@ -72,10 +72,20 @@ input, select, textarea {
 	appearance: none;
 }
 
-.content .inner {
-    max-width: 800px;  
-    margin: 0 auto;  
-    text-align: left;
+.content {
+    width: 100%; /* ensure content takes full width */
+    max-width: 800px; /* set a maximum width */
+    margin: 0 auto; /* center the content */
+    padding: 4em 2em; /* provide some spacing around the content */
+    box-sizing: border-box; /* ensure padding is included in width calculation */
+}
+
+#header .logo img {
+    width: 100%; /* ensure image takes full width of its container */
+    max-width: 200px; /* set a maximum width for the image */
+    border-radius: 100%; /* retain circular shape */
+    margin: 0 auto; /* center the image */
+    display: block; /* ensure image is a block-level element */
 }
 
 
